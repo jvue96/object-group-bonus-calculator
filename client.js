@@ -42,19 +42,19 @@ for (let i = 0; i<employees.length; i++) {
   let person = employees[i];
       console.log(person.name);
       
-      let newEmployee = new Employee( person.name);
+      let newEmployee = new Employee( person.name, person.employeeNumber, person.annualSalary, person.reviewRating, person.bonusPercentage, person.totalBonus, person.totalBonus);
       console.log(newEmployee);
       
 } // end for loop 
 console.log( employees );
 
-`
-// 
-function Employee (name, bonusPercentage, totalCompensation, totalBonus, rating) {
+function Employee (name, employeeNumber, annualSalary, reviewRating, bonusPercentage, totalCompensation, totalBonus, ) {
    this.name = name;
+   this.employeeNumber = employeeNumber;
+   this.annualSalary = annualSalary;
+   this.reviewRating = reviewRating;
    this.bonusPercentage = bonusPercentage;
    this.totalCompensation = totalCompensation;
    this.totalBonus = totalBonus;
-   this.rating = rating;
 } // end object constructer Rater 
 
