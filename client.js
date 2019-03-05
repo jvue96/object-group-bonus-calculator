@@ -37,7 +37,24 @@ const employees = [
 // This problem is massive! Break the problem down. Use the debugger.
 // What is the fewest lines of code I can write and test to get just a little closer?
 
-// This is not a race. Everyone on your team should understand what is happening.
-// Ask questions when you don't.
-
+//create loop employees array using object as input
+for (let i = 0; i<employees.length; i++) {
+  let person = employees[i];
+      console.log(person.name);
+      
+      let newEmployee = new Employee( person.name);
+      console.log(newEmployee);
+      
+} // end for loop 
 console.log( employees );
+
+`
+// 
+function Employee (name, bonusPercentage, totalCompensation, totalBonus, rating) {
+   this.name = name;
+   this.bonusPercentage = bonusPercentage;
+   this.totalCompensation = totalCompensation;
+   this.totalBonus = totalBonus;
+   this.rating = rating;
+} // end object constructer Rater 
+
