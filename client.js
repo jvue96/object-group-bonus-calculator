@@ -43,10 +43,10 @@ for (let i = 0; i<employees.length; i++) {
       console.log(person.name);
       
       let newEmployee = new Employee( person.name, person.employeeNumber, person.annualSalary, person.reviewRating, person.bonusPercentage, person.totalBonus, person.totalBonus);
-      console.log(newEmployee);
-      
+      console.log(newEmployee.reviewRating);
+           
 } // end for loop 
-console.log( employees );
+//console.log( employees );
 
 function Employee (name, employeeNumber, annualSalary, reviewRating, bonusPercentage, totalCompensation, totalBonus, ) {
    this.name = name;
@@ -58,3 +58,11 @@ function Employee (name, employeeNumber, annualSalary, reviewRating, bonusPercen
    this.totalBonus = totalBonus;
 } // end object constructer Rater 
 
+function emBonus(name){
+  if (newEmployee.reviewRating ===2){
+    return "employee does not recieve bonus";
+  }else {
+    return "employee recieves bonus"
+  }
+}
+console.log(emBonus);
